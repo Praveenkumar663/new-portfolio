@@ -1,0 +1,43 @@
+
+.navbar{
+    background-color:rgb(1, 25, 40);  
+    
+}
+
+.navbar .navbar-brand {
+   color: #37f0d0;
+  font-size: 1.6rem;
+  font-weight: 600;
+
+}
+
+.navbar .navbar-collapse .navbar-nav{
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+.navbar .navbar-collapse .navbar-nav .nav-item{
+    padding: 0px 10px ;
+}
+.navbar .navbar-collapse .navbar-nav .nav-item 
+.nav-link{
+    color: #fff;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover{
+    color:#37f0d0;
+    border-bottom: 2px solid #37f0d0;
+}
+.active{
+    border-bottom: 2px solid #37f0d0; 
+     color: #37f0d0 !important; 
+}
+
+
+.navbar .container-fluid button i{
+    color: #37f0d0;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
