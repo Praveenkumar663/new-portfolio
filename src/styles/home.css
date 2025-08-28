@@ -1,7 +1,6 @@
 .home{
     align-items: center;
     justify-content: center;
-    display: flex;
     width: 100%; 
    box-sizing: border-box;
     margin: 40px 20px;
@@ -89,6 +88,7 @@
     display: flex;
     margin: 40px 30px;
     border-radius: 50%;
+    overflow: hidden;
     position: relative;  
   
 }
