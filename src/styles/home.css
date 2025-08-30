@@ -2,7 +2,7 @@
    
     width: 100%; 
    box-sizing: border-box;
-    margin: 40px 20px;
+    margin: 40px 5% 20px;
 }
 .home .row{
     margin: 20px 10px;
@@ -109,7 +109,7 @@
 
 /* media devices - 576 */ 
 @media (max-width: 576px) {
-  .home .row {
+  .home {
     margin: 20px 10px;
     flex-direction: column-reverse;
     align-items: center;
@@ -117,6 +117,7 @@
     display: flex;
     flex-wrap: wrap;
     text-align: center; 
+    width: 100%;
   }
 
   .home .row p {
@@ -131,7 +132,7 @@
   .home .row .logo {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 5px;
     margin: 20px 0;
     flex-wrap: wrap;
   }
