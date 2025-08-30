@@ -3,8 +3,6 @@ import {Experience,Certificates} from '../data.js'
 
 const About = () => {
 
-    
-
   return (
     <div className="container-fluid about">
       
@@ -14,7 +12,7 @@ const About = () => {
        <div className="row about-content  mt-1">
         <p className='about-text'>I’m Praveenkumar, a passionate <b>Full-Stack Developer</b> and <b>MCA student</b> with a strong interest in building modern, scalable, and user-friendly applications. My technical expertise includes the <b>MERN Stack (MongoDB, Express.js, React, Node.js)</b> along with <b>Python</b>, <b>Java</b>, <b>MySQL</b>, <b>JavaScript</b>, <b>HTML</b>, <b>CSS</b>, and <b>Bootstrap</b>.</p>
         <p className='about-text'>
-          I’ve gained practical experience through a <b>6-month internship as a Software Developer at Visval Career Solution</b> Pvt Ltd and by working as a <b>Programming Instructor at CSC</b>, where I taught <b>C, C++, Python, HTML, and CSS</b>. These experiences helped me sharpen my problem-solving, coding, and mentoring skills.
+          I’ve gained practical experience through a <b>6-month internship as a Software Developer at Visval Career Solutions</b> Pvt Ltd and by working as a <b>Programming Instructor at CSC</b>, where I taught <b>C, C++, Python, HTML, and CSS</b>. These experiences helped me sharpen my problem-solving, coding, and mentoring skills.
         </p>
         <p className='about-text'>
           My goal is to grow as a <b>Full-Stack Developer</b>, continuously learning and contributing to impactful projects. I’m open to <b>job opportunities</b>, <b>internships</b>, and <b>freelance </b> projects, where I can apply my skills and gain valuable industry experience

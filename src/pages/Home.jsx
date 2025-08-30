@@ -62,8 +62,7 @@ const Home = () => {
 
                   {/* Buttons */}
                   <div className="buttons-groups">
-                    <a href="#" download className='btns me-3'><i className="bi bi-download fs-4 pe-1"></i>
- Download CV</a>
+                    <a href="#"  className='btns '> My Resume</a>
                     <Link to='/contact' className='btns'>Hire Me</Link>
                   </div>
 
