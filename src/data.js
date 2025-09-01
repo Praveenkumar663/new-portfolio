@@ -2,6 +2,13 @@
 import { FaCode, FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaNodeJs, FaDatabase, FaTools, FaJava, FaPython } from "react-icons/fa";
 import { SiJavascript, SiMongodb, SiExpress, SiMysql, SiPostman, SiGit, SiFigma, SiC, SiCplusplus } from "react-icons/si";
 import { BiLogoVisualStudio } from "react-icons/bi";
+import { FaServer } from "react-icons/fa6";
+import bmi from "./assets/bmi.jpeg";
+import movie from "./assets/movie.jpeg";
+import portfolio from "./assets/portfolio.jpeg";
+import project from "./assets/project-management-system.png";
+import weather from './assets/weather.png'
+import currency from './assets/currency.png'
 
 
 
@@ -48,7 +55,7 @@ export const frontend = {
 
 // ================= BACKEND =================
 export const backend = {
-  titleIcon: FaCode,
+  titleIcon: FaServer,
   title: "Backend & Programming",
   skills: [
     { name: "Node.js", icon: FaNodeJs, color: "#0abe04ff" },
@@ -82,4 +89,73 @@ export const tools = {
     { name: "VS Code", icon: BiLogoVisualStudio, color: "#007ACC" }
   ]
 };
+
+
+// projects
+// src/data/projectsData.js
+
+
+export const projectsData = [
+  {
+    id: 1,
+    title: "Portfolio Website",
+    description:
+      "My personal portfolio showcasing skills, projects, and resume with a responsive design.",
+    tech: ["React", "Bootstrap", "CSS"],
+    image: portfolio,
+    github: "https://github.com/Praveenkumar663/new-portfolio",
+    live: "https://praveenkumar-orcin.vercel.app/", 
+  },
+  {
+    id: 2,
+    title: "MoviHunt",
+    description:
+      "A movie search app to explore details like ratings, cast, and reviews using a movie API.",
+    tech: ["React", "JavaScript", "API", "Bootstrap"],
+    image: movie,
+    github: "https://github.com/Praveenkumar663/moviehunt", 
+    live: "https://moviehunts-five.vercel.app/", 
+  },
+  {
+    id: 3,
+    title: "Project Management System ",
+    description:
+      "Backend system with CRUD APIs for managing projects and tasks, built with Node.js & MongoDB.",
+    tech: ["Node.js", "Express", "MongoDB", "Mongoose"],
+    image: project,
+    github: "https://github.com/Praveenkumar663/project-management-backend", 
+    live: "", 
+  },
+  {
+    id: 4,
+    title: "Weather App",
+    description:
+      "A real-time weather app showing temperature, humidity, and conditions using OpenWeather API.",
+    tech: ["React", "JavaScript", "API", "CSS"],
+    image:weather ,
+    github: " https://github.com/Praveenkumar663/react-weather-app", 
+    live: "https://weather-app-pi-mauve-95.vercel.app/",
+  },
+  {
+    id: 5,
+    title: "Currency Converter",
+    description:
+      "A simple app to convert currencies instantly with live exchange rates.",
+    tech: ["React", "JavaScript", "API"],
+    image:currency ,
+    github: "https://github.com/Praveenkumar663/Currency-Conveter", 
+    live: "https://currency-conveter-psi.vercel.app/", 
+  },
+  {
+    id: 6,
+    title: "BMI Calculator",
+    description:
+      "A calculator app that checks BMI status based on weight and height inputs.",
+    tech: ["React", "JavaScript", "CSS"],
+    image:bmi,
+    github: "https://github.com/Praveenkumar663/BMI-Calculator", 
+    live: "https://bmi-calculator-zeta-azure.vercel.app/", 
+  },
+];
+
 

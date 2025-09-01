@@ -12,7 +12,7 @@ const Skills = () => {
         </div>
         {/* skill content */}
           <div className="row skill-content my-3">
-            <p>These are my core skills, along with the technologies I am currently learning and the areas I plan to explore in the future. </p>
+            <p className='text-center'>These are my core skills, along with the technologies I am currently learning and the areas I plan to explore in the future. </p>
           </div>
 
       {/* skills  */}
@@ -138,7 +138,7 @@ const Skills = () => {
                 </div>
 
                 <div className="col-sm-12 col-md-6 col-lg-6">
-                  <div className="future-goal">
+                  <div className="future-goal mb-4">
                     <span className="icon "><FaBullseye /></span>
                     <span className="title">Future Goals</span>
                     <ul>

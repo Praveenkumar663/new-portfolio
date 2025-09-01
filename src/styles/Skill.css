@@ -37,6 +37,7 @@
 
 .skills .skill-details .card{
     width: 100%;
+    min-height: 450px;
     border-radius: 12px;
     background-color: rgb(54, 65, 71);
     border: 1px solid rgb(0, 25, 45);
