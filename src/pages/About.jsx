@@ -1,5 +1,6 @@
 import '../styles/About.css'
 import {Experience,Certificates} from '../data.js'
+import { FaDownload } from "react-icons/fa";
 
 const About = () => {
 
@@ -20,9 +21,15 @@ const About = () => {
 
        </div>
 
+       {/* download rrsume */}
+       <div className="row download-resume">
+        <a href="#"download="Praveenkumar_Resume.pdf"
+      className="btn-resume"><FaDownload style={{ marginRight: "8px" }} />Download Resume</a>
+       </div>
+
        {/* education, experiences and certifications details */}
 
-      <div className="row about-details mt-5">
+      <div className="row about-details ">
         {/* educatins */}
             <div className="col-sm-12 col-md-6 col-lg-4 my-md-5 my-sm-3">
               <div className="card">

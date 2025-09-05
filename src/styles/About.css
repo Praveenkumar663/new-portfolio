@@ -50,6 +50,34 @@
   margin-top: 40px;
 }
 
+/* download resume */
+.about .download-resume{
+  margin-top: 40px;
+}
+.btn-resume {
+  width: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0ef;
+  color: #000;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 2px solid #0ef;
+  transition: 0.3s ease;
+  box-shadow: 0 0 5px #0ef, 0 0 15px rgba(55, 240, 208, 0.4);
+  font-size: 18px;
+}
+
+.btn-resume:hover {
+  background-color: transparent;
+  color: #37f0d0;
+  transform: scale(1.05);
+}
+
+
 .about-details .card {
   background: rgb(54, 65, 71);
   color: #fff;
