@@ -66,7 +66,7 @@ const Contact = () => {
             </div>
 
             {/* forms */}
-            <div className="col-sm-12 col-md-7 col-lg-8 mx-auto contact-form ">
+            <div className="col-sm-12 col-md-7 col-lg-8  contact-form ">
             <form action="https://api.web3forms.com/submit" method="POST">
   <input 
     type="hidden" 
