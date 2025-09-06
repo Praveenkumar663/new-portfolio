@@ -23,7 +23,7 @@ const About = () => {
 
        {/* download rrsume */}
        <div className="row download-resume">
-        <a href="#"download="Praveenkumar_Resume.pdf"
+        <a href="../public/praveenkumar-resume.pdf"download="Praveenkumar_Resume.pdf"
       className="btn-resume"><FaDownload style={{ marginRight: "8px" }} />Download Resume</a>
        </div>
 
