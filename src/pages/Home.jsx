@@ -2,6 +2,8 @@ import '../styles/home.css'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react';
 import profile from '../assets/profile1.jpg'
+import resume from '../../public/praveenkumar-resume.pdf'
+
 
 const Home = () => {
   const roles = ["Full-Stack Developer", "MERN Stack Developer", "Freelancer"];
@@ -62,7 +64,7 @@ const Home = () => {
 
                   {/* Buttons */}
                   <div className="buttons-groups">
-                    <a href="praveenkumar-resume.pdf"  className='btns '> My Resume</a>
+                    <a href={resume}  className='btns '> My Resume</a>
                     <Link to='/contact' className='btns'>Hire Me</Link>
                   </div>
 

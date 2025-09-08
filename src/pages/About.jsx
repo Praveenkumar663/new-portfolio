@@ -1,6 +1,7 @@
 import '../styles/About.css'
 import {Experience,Certificates} from '../data.js'
 import { FaDownload } from "react-icons/fa";
+import resume from '../../public/praveenkumar-resume.pdf'
 
 const About = () => {
 
@@ -23,7 +24,7 @@ const About = () => {
 
        {/* download rrsume */}
        <div className="row download-resume">
-        <a href="praveenkumar-resume.pdf" download="Praveenkumar_Resume.pdf"
+        <a href={resume} download="Praveenkumar_Resume.pdf"
       className="btn-resume"><FaDownload style={{ marginRight: "8px" }} />Download Resume</a>
        </div>
 
