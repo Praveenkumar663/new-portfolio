@@ -131,7 +131,7 @@ const Skills = () => {
                     <ul>
                       <li>Data Structures & Algorithms (Java)</li>
                       <li>Advanced React Patterns and Optimization</li>
-                      <li>Vue.js(expanding frontend expertise)</li>
+                      <li>Redux Toolkit(State Management)</li>
                       <li>Rest APIs & Authentication</li>
                     </ul>
                   </div>
@@ -145,7 +145,7 @@ const Skills = () => {
                       <li>Cloud technologies (AWS, Azure)</li>
                       <li>DevOps and CI/CD pipelines</li>
                       <li>Mobile development with React Native</li>
-                      <li>AI/Ml</li>
+                      <li>AI/ML</li>
                     </ul>
                   </div>
                 </div>
