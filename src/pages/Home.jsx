@@ -35,8 +35,8 @@ const Home = () => {
         <div className="row">
           {/* intro */}
 
-            <div className="col-sm-12 col-md-12 col-lg-7">
-                <span className='text-light ps-md-5  ps-sm-3 h5'>Hey there!</span>
+            <div className="col-sm-12 col-md-12 col-lg-7 mt-lg-5">
+                <span className='text-light ps-md-5  ps-sm-3 h5 mt-lg-3'>Hey there!</span>
                 <br />
                 <h2 className='text-light ps-md-5  ps-sm-3 pt-2 mb-3'>I'm <strong>PRAVEENKUMAR</strong></h2>
                 <span className='text-light ps-md-5  ps-sm-3  h5'>And I'm  a

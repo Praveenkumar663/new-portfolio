@@ -23,7 +23,7 @@ const Contact = () => {
             <div className="col-sm-12 col-md-5 col-lg-4">
 
               {/* contact-informatiom like mail */}
-              <div className="Contact-info">
+              <div className="Contact-info mt-lg-4">
 
                   <div className="contact-item">
                     <FaEnvelope className="contact-icon" />
