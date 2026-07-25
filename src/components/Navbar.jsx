@@ -14,8 +14,9 @@ const Navbar = () => {
       <div className="container-fluid">
         <NavLink to="/" className={({isActive})=>(isActive?"navbar-brand":"navbar-brand")}>
            <span className="text-light bg-primary px-1 fs-3 rounded-3">PK</span>
-           <span className="ms-2">Portfolio</span>
+           <span className="ms-2 ">Portfolio</span>
         </NavLink>
+
 
         <button
           type="button"

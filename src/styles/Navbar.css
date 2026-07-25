@@ -1,16 +1,24 @@
 
 .navbar{
     background-color:rgb(1, 25, 40);  
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(55,240,208,.15);
+    padding: 14px 0;
     
 }
 
 .navbar .navbar-brand {
-   color: #37f0d0;
+    color: #37f0d0;
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 700;
 
 }
-
+.navbar-brand span:last-child{
+    margin-left: 10px;
+    background: linear-gradient(136deg,#fff ,#37f0d0 );
+    background-clip:text;
+   color:transparent;
+}
 .navbar .navbar-collapse .navbar-nav{
     font-size: 18px;
     font-weight: 600;
@@ -26,10 +34,12 @@
 
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover{
     color:#37f0d0;
-    border-bottom: 2px solid #37f0d0;
+    border-radius:16px;
+    background:rgba(55,240,208,.08);
 }
 .active{
-    border-bottom: 2px solid #37f0d0; 
+   border-radius:16px;
+    background:rgba(55,240,208,.08);
      color: #37f0d0 !important; 
 }
 
