@@ -1,13 +1,13 @@
-import '../styles/home.css'
-import { Link } from 'react-router-dom'
-import { useEffect, useState } from 'react';
-import profile from '../assets/profile1.jpg'
-import resume from '../../public/praveenkumar-resume.pdf'
-
+import "../styles/Home.css";
+import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import profile from "../assets/profile.jpeg";
+import resume from "../../public/praveenkumar-resume.pdf";
 
 const Home = () => {
-  const roles = ["Full-Stack Developer", "MERN Stack Developer", "Freelancer"];
- const [currentIndex, setCurrentIndex] = useState(0);
+  const roles = ["Full-Stack Developer", "Freelancer"];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [charIndex, setCharIndex] = useState(0);
 
@@ -16,71 +16,104 @@ const Home = () => {
       const timeout = setTimeout(() => {
         setDisplayedText((prev) => prev + roles[currentIndex][charIndex]);
         setCharIndex((prev) => prev + 1);
-      }, 100); // typing speed (100ms per letter)
+      }, 100);
+
       return () => clearTimeout(timeout);
     } else {
-      // wait for 1.5s, then move to next role
       const timeout = setTimeout(() => {
-        setCharIndex(0);
         setDisplayedText("");
+        setCharIndex(0);
         setCurrentIndex((prev) => (prev + 1) % roles.length);
-      }, 1500);
+      }, 1800);
+
       return () => clearTimeout(timeout);
     }
-  }, [charIndex, currentIndex, roles]);
-
+  }, [charIndex, currentIndex]);
 
   return (
-    <div className="container-fluid home">
-        <div className="row">
-          {/* intro */}
+    <section className="home container-fluid">
 
-            <div className="col-sm-12 col-md-12 col-lg-7 mt-lg-5">
-                <span className='text-light ps-md-5  ps-sm-3 h5 mt-lg-3'>Hey there!</span>
-                <br />
-                <h2 className='text-light ps-md-5  ps-sm-3 pt-2 mb-3'>I'm <strong>PRAVEENKUMAR</strong></h2>
-                <span className='text-light ps-md-5  ps-sm-3  h5'>And I'm  a
-                <span className=' fs-4  pt-2 dev ps-3'><strong>{displayedText}</strong></span>
-                </span>
+      <div className="row align-items-center">
 
-                <p className='text-light ps-md-5  ps-sm-2  pt-4 fw-5 mt-2'>I’m a passionate <b>Full-Stack Web Developer</b> with expertise in building <b>scalable</b> and <b>user-friendly</b> web applications. I enjoy solving real-world problems through clean code and modern technologies. I’m open to <b>freelance projects</b> and <b>collaborations</b>.
-                </p>
+        {/* Left */}
 
-                  {/* logo */}
-                  <div className="logo p-2 mt-4">
-                      <a href="https://github.com/Praveenkumar663" className="icon" target="_blank" rel="noreferrer">
-                        <i className="bi bi-github"></i>
-                      </a>
-                      <a href="https://www.linkedin.com/in/praveenkumar663/" className="icon" target="_blank" rel="noreferrer">
-                        <i className="bi bi-linkedin"></i>
-                      </a>
-                      <a href="https://wa.me/qr/BCSGXBYQQFZWG1" className="icon" target="_blank" rel="noreferrer">
-                        <i className="bi bi-whatsapp"></i>
-                      </a>
-                      <a href="https://www.instagram.com/itz_praveen_06__" className="icon" target="_blank" rel="noreferrer">
-                        <i className="bi bi-instagram"></i>
-                      </a>
-                  </div>
+        <div className="col-lg-7 col-md-12">
 
-                  {/* Buttons */}
-                  <div className="buttons-groups">
-                    <a href={resume}  className='btns '> My Resume</a>
-                    <Link to='/contact' className='btns'>Hire Me</Link>
-                  </div>
+          <div className="hero-content">
 
-             </div>
+            <h5>Hey there !</h5>
 
-          {/* img */}
-           
-          <div className="col-sm-12 col-md-12 col-lg-5 ">
-            <div className="img">
-              <img src={profile} alt="profile" className=' img-fluid' />
+            <h1>
+              I'm <span>Praveenkumar</span>
+            </h1>
+
+            <h3>
+              I'm a
+              <span className="typing">
+                {displayedText}
+                <span className="cursor">|</span>
+              </span>
+            </h3>
+
+            <p>
+              Passionate Full Stack Developer specializing in creating modern,
+              responsive, scalable web applications with React, Node.js,
+              Express, MongoDB, and JavaScript. I enjoy solving real-world
+              problems through clean code and beautiful UI.
+            </p>
+
+            <div className="social-icons">
+
+              <a href="https://github.com/Praveenkumar663" target="_blank" rel="noreferrer">
+                <i className="bi bi-github"></i>
+              </a>
+
+              <a href="https://www.linkedin.com/in/praveenkumar663/" target="_blank" rel="noreferrer">
+                <i className="bi bi-linkedin"></i>
+              </a>
+
+              <a href="https://wa.me/qr/BCSGXBYQQFZWG1" target="_blank" rel="noreferrer">
+                <i className="bi bi-whatsapp"></i>
+              </a>
+
+              <a href="https://www.instagram.com/itz_praveen_06__" target="_blank" rel="noreferrer">
+                <i className="bi bi-instagram"></i>
+              </a>
+
             </div>
+
+            <div className="hero-buttons">
+
+              <a href={resume} target="_blank" rel="noreferrer">
+                Resume
+              </a>
+
+              <Link to="/contact">
+                Hire Me
+              </Link>
+
+            </div>
+
           </div>
 
-         </div>
-    </div>
-  )
-}
+        </div>
 
-export default Home
+        {/* Right */}
+
+        <div className="col-lg-5 col-md-12  ">
+
+          <div className="profile-image">
+
+            <img src={profile} alt="profile"/>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+  );
+};
+
+export default Home;

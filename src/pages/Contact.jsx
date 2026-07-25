@@ -2,7 +2,6 @@ import '../styles/Contact.css'
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaWhatsapp ,FaInstagram,FaGithub,FaLinkedin} from "react-icons/fa";
 
 
-
 const Contact = () => {
 
   return (

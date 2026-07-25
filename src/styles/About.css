@@ -16,12 +16,13 @@
   text-align: center; /* ensures title is centered */
 }
 
+
 .about .about-title span {
   color: #37f0d0;
 }
 
 .about .about-content {
-  max-width: 1000px;
+  /* max-width: 1000px;
   width: 100%;
   padding: 15px;
   background-color: rgb(54, 65, 71);
@@ -29,17 +30,57 @@
   border: 1px solid rgb(0, 25, 45);
   border-radius: 8px;
   letter-spacing: 1px;
-  margin: auto; /* centers block */
+  margin: auto; centers block */
+   background:rgba(255,255,255,.05);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:20px;
+    padding:35px;
 }
 
 .about .about-text {
-  font-size: 18px;
+ 
   text-align: justify;
   font-weight: 400;
+  color:#ddd;
+  line-height:2;
+  font-size:17px;
 }
 
 .about .about-text b {
-  color: #37f0d0;
+  
+  color:#00f5d4;
+    font-weight:600;
+}
+
+
+
+/* download resume */
+.about .download-resume{
+  text-align:center;
+    margin:40px 0;
+}
+.btn-resume {
+  width: auto;
+  align-items: center;
+  justify-content: center;
+   display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:14px 28px;
+    background:#00f5d4;
+    color:#081b29;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:700;
+    transition:.4s ease;
+}
+
+.btn-resume:hover {
+  background:#00f5d420;
+  border:2px solid #00f5d4;
+    color:#00f5d4;
+  transform: scale(1.0);
 }
 
 /* education, experiences and certifications details */
@@ -50,64 +91,47 @@
   margin-top: 40px;
 }
 
-/* download resume */
-.about .download-resume{
-  margin-top: 40px;
-}
-.btn-resume {
-  width: auto;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #0ef;
-  color: #000;
-  font-weight: 600;
-  padding: 10px;
-  border-radius: 8px;
-  text-decoration: none;
-  border: 2px solid #0ef;
-  transition: 0.3s ease;
-  box-shadow: 0 0 5px #0ef, 0 0 15px rgba(55, 240, 208, 0.4);
-  font-size: 18px;
-}
-
-.btn-resume:hover {
-  background-color: transparent;
-  color: #37f0d0;
-  transform: scale(1.05);
-}
-
 
 .about-details .card {
-  background: rgb(54, 65, 71);
-  color: #fff;
-  border: 1px solid rgb(0, 25, 45);
-  border-radius: 12px;
-  box-shadow: 0 0 8px rgba(0, 238, 255, 0.2);
-  padding: 20px;
-  width: 100%;
-  max-width: 400px;
-  min-height: 350px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height:350px;
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(15px);
+    border-radius:18px;
+    padding:28px;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.4s;
 }
 
 .about-details .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 0 12px #0ef, 0 0 25px rgba(55, 240, 208, 0.4);
+ transform:translateY(-8px);
+    box-shadow:0 0 30px rgba(0,245,212,.25);
 }
 
 .about-details .card-title {
   font-size: 24px;
   font-weight: 700;
-  color: #37f0d0;
-  margin-bottom: 10px;
-  text-align: center;
-  display: inline-block;
-  padding-bottom: 5px;
+  color:#00f5d4;
+  margin-bottom:2px;
+  text-align:center;
+  
+
 }
 
 .about-details .experience-item {
-  margin-bottom: 18px; 
+  border-left:3px solid #00f5d4;
+    padding-left:15px;
+    margin-bottom:25px;
+    position:relative;
+ }
+.about-details .experience-item ::before {
+  content:"";
+    width:12px;
+    height:12px;
+    background:#00f5d4;
+    border-radius:50%;
+    position:absolute;
+    left:-7px;
+    top:5px;
  }
 
 .about-details .experience-item:last-child {
@@ -117,7 +141,7 @@
 .about-details .experience-year {
   display: block;
   font-size: 14px;
-  color: #bbb;   
+  color:#ccc;  
   margin-bottom: 5px;
   margin-top: 2px;
 }
@@ -133,8 +157,7 @@
 .about-details .card-text {
   font-size: 15px;
   margin: 5px 0 12px 0;
-  line-height: 1.5;
-  color: #dcdcdc;
+  color:#00f5d4;
 }
 
 .about-details .list-group-item {
@@ -143,8 +166,24 @@
   padding: 8px 0;
   color: #dcdcdc;
   font-size: 15px;
+  border-bottom:1px solid rgba(255,255,255,.08);
   transition: color 0.3s ease;
+  position: relative;
 }
+
+.about-details .list-group-item::before {
+   content:"";
+    width:8px;
+    height:8px;
+    background:#00f5d4;
+    border-radius:50%;
+    position:absolute;
+    left: -1.3rem;
+    top:1rem;
+    box-shadow: 0 0 5px #00f5d4;
+   
+}
+
 
 .about-details .list-group-item:hover {
   color: #37f0d0;

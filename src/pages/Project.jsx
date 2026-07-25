@@ -1,62 +1,120 @@
-import '../styles/Project.css'
-import {projectsData} from '../data.js'
+import "../styles/Project.css";
+import { projectsData } from "../data";
 import { SiGithub } from "react-icons/si";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { useState } from 'react';
+import { useEffect, useState } from "react";
 
+const categories = ["All", "Full stack", "Frontend", "Backend"];
 
 const Project = () => {
-  const [projects] = useState(projectsData);
+  const [filterArr, setFilterArr] = useState([]);
+  const [activeCategory, setActiveCategory] = useState("All");
+
+  useEffect(() => {
+    setFilterArr(projectsData);
+  }, []);
+
+  const handleCategory = (category) => {
+    setActiveCategory(category);
+
+    if (category === "All") {
+      setFilterArr(projectsData);
+    } else {
+      setFilterArr(
+        projectsData.filter((project) => project.category === category)
+      );
+    }
+  };
 
   return (
-    <div className="container-fluid projects">
-      {/* title */}
-      <div className="row">
-        <h2 className='text-center  fw-bold mb-3 project-title'>My <span className='title-color'>Projects</span> </h2>
+    <section className="projects container-fluid">
+
+      <div className="heading">
+        <h2>
+          My <span>Projects</span>
+        </h2>
+
+        <p>
+          Here are some of my projects showcasing frontend, backend and
+          full-stack development using modern technologies.
+        </p>
       </div>
 
-    {/* intro */}
+      <div className="category-buttons">
+        {categories.map((cat) => (
+          <button
+            key={cat}
+            className={activeCategory === cat ? "active" : ""}
+            onClick={() => handleCategory(cat)}
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
 
-    <div className="row project-intro">
-      <p className='text-light text-center '>Here are some of the projects I’ve developed, highlighting my skills in frontend, backend, and full-stack development using modern web technologies.</p>
-    </div>
+      <div className="row ">
 
-    {/* projects */}
+        {[...filterArr]
+          .sort((a, b) => b.id - a.id)
+          .map((project) => (
 
-    <div className="row project-details">
-      {projectsData.map((project)=>(
-          <div className="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center" key={project.id}>
+            <div
+              className="col-lg-4 col-md-6 col-sm-12 mb-5 "
+              key={project.id}
+            >
+              <div className="project-card">
 
-          <div className="card">
-            <img src={project.image} alt="images" className="card-img  object-fit-cover" />
-            <div className="card-body">
-                <h4 className="card-title">{project.title}</h4>
-                <p className="card-text">{project.description}</p>
-                <ul>
-                   {project.tech.map((t, index) => (
-                    <li key={index}>{t}</li>
-                  ))}
-                </ul>
-                  <div className="project-link">
-                    <a href={project.github} className="card-link" target='_blank' > < SiGithub /> GitHub</a>
+                <div className="image-box">
+                  <img src={project.image} alt={project.title} />
+                </div>
 
-                    {project.live && (<a href={project.live} className="card-link"  target='_blank' > <FaExternalLinkAlt /> live Demo</a>
-                  )}
-                    </div>
+                <div className="project-content">
+
+                  <h3>{project.title}</h3>
+
+                  <p>{project.description}</p>
+
+                  <div className="tech-stack">
+                    {project.tech.map((tech, index) => (
+                      <span key={index}>{tech}</span>
+                    ))}
+                  </div>
+
+                  <div className="project-links">
+
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <SiGithub />
+                      GitHub
+                    </a>
+
+                    {project.live && (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <FaExternalLinkAlt />
+                        Live Demo
+                      </a>
+                    )}
+
+                  </div>
+
+                </div>
+
+              </div>
             </div>
 
-          </div>
+          ))}
 
       </div>
-      ))}
-      
-      
-    </div>
 
-    
+    </section>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Project
+export default Project;

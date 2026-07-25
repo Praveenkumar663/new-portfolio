@@ -12,13 +12,17 @@ const About = () => {
         <h2 className='text-center  fw-bold mb-3 about-title'>About <span>Me</span> </h2>
       </div>
        <div className="row about-content  mt-1">
-        <p className='about-text'>I’m Praveenkumar, a passionate <b>Full-Stack Developer</b> and <b>MCA student</b> with a strong interest in building modern, scalable, and user-friendly applications. My technical expertise includes the <b>MERN Stack (MongoDB, Express.js, React, Node.js)</b> along with <b>Python</b>, <b>Java</b>, <b>MySQL</b>, <b>JavaScript</b>, <b>HTML</b>, <b>CSS</b>, and <b>Bootstrap</b>.</p>
-        <p className='about-text'>
-          I’ve gained practical experience through a <b>6-month internship as a Software Developer at Visval Career Solutions</b> Pvt Ltd and by working as a <b>Programming Instructor at CSC</b>, where I taught <b>C, C++, Python, HTML, and CSS</b>. These experiences helped me sharpen my problem-solving, coding, and mentoring skills.
-        </p>
-        <p className='about-text'>
-          My goal is to grow as a <b>Full-Stack Developer</b>, continuously learning and contributing to impactful projects. I’m open to <b>job opportunities</b>, <b>internships</b>, and <b>freelance </b> projects, where I can apply my skills and gain valuable industry experience
-        </p>
+      <p className="about-text">
+  Hi, I'm <b>Praveenkumar</b>, a passionate <b>Full-Stack Developer</b> with a strong interest in building modern, scalable, and user-friendly web applications. I am skilled in <b>Python, Django, Django REST Framework (DRF)</b>, and frontend development using <b>React, JavaScript, HTML, CSS, and Bootstrap</b>. I also have a basic understanding of the <b>MERN Stack (MongoDB, Express.js, React, and Node.js)</b> and enjoy continuously learning new technologies to build efficient and reliable applications.
+</p>
+
+<p className="about-text">
+  I have completed a <b>6-month internship as a Software Developer at Visval Career Solutions Pvt. Ltd.</b>, where I gained hands-on experience developing real-world applications and collaborating on software projects. I also worked as a <b>Programming Instructor at CSC</b>, teaching <b>C, C++, Python, HTML, and CSS</b>, which strengthened both my technical knowledge and communication skills.
+</p>
+
+<p className="about-text">
+  I enjoy solving problems, learning new technologies, and creating responsive, high-quality applications that provide a great user experience. I am currently seeking opportunities as a <b>Full-Stack Developer</b> where I can contribute to meaningful projects, continue growing my skills, and make a positive impact as part of a development team.
+</p>
 
        </div>
 
@@ -43,8 +47,7 @@ const About = () => {
                   </p>
 
                   <h4 className="card-subtitle">Bachelor of Science (Mathematics)</h4>
-                  <p className="card-text d-block">Alagappa Government Arts & Science College,
-                      <span className='d-block'>Alagappa University </span>
+                  <p className="card-text d-block">Alagappa University
                     <span className='d-block'>karaikudi</span>
                     <span>2021-2024</span>
                   </p>
@@ -65,7 +68,7 @@ const About = () => {
           <p className="card-text d-block">
             {exper.companyName}
             <span className="d-block">{exper.location}</span>
-            <span>{exper.duration}</span>
+            
           </p>
         </div>
       ))}

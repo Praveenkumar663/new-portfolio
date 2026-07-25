@@ -14,6 +14,7 @@
     font-size: 34px;
     font-weight: 700;
 }
+
 .skills .row .skill-title .title-color{
   color: #37f0d0;   
 }
@@ -38,9 +39,10 @@
 .skills .skill-details .card{
     width: 100%;
     min-height: 450px;
-    border-radius: 12px;
-    background-color: rgb(54, 65, 71);
-    border: 1px solid rgb(0, 25, 45);
+    border-radius: 16px;
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.15);
     box-shadow: 0 0 8px rgba(0, 238, 255, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 10px;
@@ -49,6 +51,8 @@
 .skills .skill-details .card:hover{
   transform: translateY(-8px);
   box-shadow: 0 0 12px #0ef, 0 0 25px rgba(55, 240, 208, 0.4);
+  .card-title-logo .card-title{
+    color: #37f0d0;}
 }
 
 /* card-title-logo */
@@ -58,16 +62,18 @@
    align-items: center;
    justify-content: center;
    padding: 5px;
-   color: #37f0d0;
+   
 }
 .skill-details .card .card-title-logo .card-title-icon{
     font-size: 26px;
     font-weight: bold;
+    color: #37f0d0;
 }
 .skill-details .card .card-title-logo .card-title{
     font-size: 20px;
     padding-top: 7px;
-    font-weight: 600;  
+    font-weight: 600; 
+    color: #fff; 
 }
 
 .skill-details .list-group {
@@ -98,11 +104,12 @@
     justify-content: center;
 }
 .skill-details .icon-name li{
-    padding: 5px;
+    padding:6px 14px;
     margin: 5px;
-    color: #ffffff;
-    border: 2px solid #0ef;
-    border-radius: 8px;
+    background:#00f5d420;
+    border:1px solid #00f5d4;
+    color:#00f5d4;
+    border-radius: 30px;
     font-size: 1rem;
 }
 
@@ -121,8 +128,9 @@
 }
 .learning .current-learning,
 .learning .future-goal {
-  background: rgb(54, 65, 71); 
-  border: 1px solid rgb(0, 25, 45);
+  background:rgba(255,255,255,.05);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.15);
   border-radius: 12px;
   box-shadow: 0 0 8px rgba(0, 238, 255, 0.2);
   padding: 20px;
@@ -214,6 +222,7 @@
     margin-bottom: 20px;
     padding: 8px;
     
+    
   }
     /* card title logo */
   .skill-details .card .card-title-logo {
@@ -266,5 +275,4 @@
   }
 
 }
-
 

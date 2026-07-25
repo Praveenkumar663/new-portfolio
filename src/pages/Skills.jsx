@@ -1,4 +1,4 @@
-import {frontend,backend,Database, tools} from '../data.js'
+import {Programming,frontend,backend,Database, tools} from '../data.js'
 import '../styles/Skill.css'
 import { FaBullseye,FaBookOpen} from "react-icons/fa6";
 
@@ -18,6 +18,33 @@ const Skills = () => {
       {/* skills  */}
 
         <div className="row skill-details">
+
+        {/* Programming */}
+          <div className="col-sm-12 col-md-6 col-lg-4">
+            <div className="card">
+              <div className="card-title-logo">
+                <span className="card-title-icon me-2"><frontend.titleIcon/></span>
+                <span className="card-title">{Programming.title}</span>
+              </div>
+                 <div className="card-body">
+                   <ul className="list-group list-group-flush ">
+
+                    {Programming.skills.map((skill,index)=>(
+                       <li className="list-group-item" style={{color:skill.color}} key={index}>
+                      <skill.icon/>
+                      </li>
+                    ))}
+                   </ul>
+                   <ul className="icon-name mt-4"> 
+                    {Programming.skills.map((skill,index)=>(
+                      <li key={index}>{skill.name}</li>
+                    
+                    ))}
+                   </ul>
+                 </div>
+            </div>
+          </div>
+
         {/* frontend */}
           <div className="col-sm-12 col-md-6 col-lg-4">
             <div className="card">
@@ -43,6 +70,7 @@ const Skills = () => {
                  </div>
             </div>
           </div>
+
                 {/* backend */}
           <div className="col-sm-12 col-md-6 col-lg-4">
             <div className="card">
@@ -129,10 +157,9 @@ const Skills = () => {
                     <span className="icon "><FaBookOpen /></span>
                     <span className="title">Currently Learning</span>
                     <ul>
-                      <li>Data Structures & Algorithms (Java)</li>
+                      <li>Data Structures & Algorithms (Python)</li>
+                      <li>Advanced Django & Django REST Framework (DRF)</li>
                       <li>Advanced React Patterns and Optimization</li>
-                      <li>Redux Toolkit(State Management)</li>
-                      <li>Rest APIs & Authentication</li>
                     </ul>
                   </div>
                 </div>
@@ -144,8 +171,7 @@ const Skills = () => {
                     <ul>
                       <li>Cloud technologies (AWS, Azure)</li>
                       <li>DevOps and CI/CD pipelines</li>
-                      <li>Mobile development with React Native</li>
-                      <li>AI/ML</li>
+                      <li>AI Integration & Machine Learning Basics</li>
                     </ul>
                   </div>
                 </div>
