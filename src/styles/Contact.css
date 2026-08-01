@@ -134,6 +134,14 @@
   box-shadow: 0 0 5px #37f0d0;;
 }
 
+.contact-form p{
+  color: #00f5d4;
+  font-weight:600;
+  font-size: large;
+  padding: 1rem ;
+  text-transform: capitalize;
+}
+
 
 @media (max-width: 576px) {
   .contact .contact-title {
@@ -173,6 +181,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    
     
   }
+
 }

@@ -1,8 +1,8 @@
+import "../styles/home.css";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import profile from "../assets/profile.jpeg";
+import profile from "../assets/profile1.jpeg";
 import resume from "../../public/praveenkumar-resume.pdf";
-import "../styles/home.css";
 
 const Home = () => {
   const roles = ["Full-Stack Developer", "Freelancer"];
@@ -56,10 +56,7 @@ const Home = () => {
             </h3>
 
             <p>
-              Passionate Full Stack Developer specializing in creating modern,
-              responsive, scalable web applications with React, Node.js,
-              Express, MongoDB, and JavaScript. I enjoy solving real-world
-              problems through clean code and beautiful UI.
+              Full Stack Developer passionate about web development.Building modern, responsive, and scalable web applications. Focused on clean architecture and intuitive user interfaces. Turning ideas into seamless digital experiences.
             </p>
 
             <div className="social-icons">
@@ -87,6 +84,7 @@ const Home = () => {
               <a href={resume} target="_blank" rel="noreferrer">
                 Resume
               </a>
+              
 
               <Link to="/contact">
                 Hire Me
