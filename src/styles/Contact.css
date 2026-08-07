@@ -50,8 +50,12 @@
 /* Social Media Links */
 .Contact-info .social-links{
     display: flex;
-     flex-wrap: wrap;  
+    flex-wrap: wrap;  
     gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 4vh auto;
+  
 }
 .Contact-info .social-links a{
       font-size: 28px;
@@ -176,11 +180,11 @@
    
   }
   .contact-form {
-    margin-top: 40px;
-     width: 100%;        
+    width: 100%;        
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 40px auto;
 
     
     

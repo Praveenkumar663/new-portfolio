@@ -88,7 +88,7 @@ const Contact = () => {
           </div>
         </div>
 
-
+        
         {/* forms */}
         <div className="col-sm-12 col-md-7 col-lg-8  contact-form ">
           <form  method="POST" ref={inputValue} onSubmit={handleSubmit}>

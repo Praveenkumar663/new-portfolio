@@ -15,9 +15,7 @@
 }
 .navbar-brand span:last-child{
     margin-left: 10px;
-    background: linear-gradient(136deg,#fff ,#37f0d0 );
-    background-clip:text;
-   color:transparent;
+   color:#37f0d0 ;
 }
 .navbar .navbar-collapse .navbar-nav{
     font-size: 18px;

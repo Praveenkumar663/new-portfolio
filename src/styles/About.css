@@ -22,15 +22,6 @@
 }
 
 .about .about-content {
-  /* max-width: 1000px;
-  width: 100%;
-  padding: 15px;
-  background-color: rgb(54, 65, 71);
-  color: #fff;
-  border: 1px solid rgb(0, 25, 45);
-  border-radius: 8px;
-  letter-spacing: 1px;
-  margin: auto; centers block */
    background:rgba(255,255,255,.05);
     backdrop-filter:blur(15px);
     border:1px solid rgba(255,255,255,.1);
@@ -204,6 +195,10 @@
   .about .about-content {
     width: 100%;
     padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
   }
   .about .about-text {
   font-size: 16px;
